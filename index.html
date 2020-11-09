@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Guide</title>
+    <title>NielvidTV</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
     <script
@@ -12,21 +12,22 @@
     ></script>
 </head>
 <body>
+    <div id='top'></div>
 <!--<div class="main-container" >--->
 
     <!--HEADER SECTION-->
-    <div id="top">
+    <div id='text'></div>
     <div class="main-container" >
     <header >
         <div class="header-wrapper" >
             <div class="header-bar">
-                <a class="logo" href="#">MOVIE GUIDE</a>
+                <a class="logo" href="#">NielvidTV</a>
                 <nav id="bignav">
                 <ul class="list-container">
                     <li class="list"><a href="#">Home</a></li>
                     <li class="list"><a href="#">Movies</a></li>
                     <li class="list"><a href="#">Series</a></li>
-                    <li class="list"><a href="#">My list</a></li>
+                    <li class="list"><a href="#">Blog</a></li>
                     <li class="list"><a href="#">Search</a></li>
                 </ul>
             </nav>
@@ -50,15 +51,16 @@
             
 
         </div>
-</header></div></div>
+</header>
 
 <!--END OF HEADER-->
 
 <!--SLIDER SECTION-->
 <section id="slider-section" >
-    <div class="slide-container">
+    
+    <!-- <div class="slide-container">
        
-        <!--<a href="#" class="prev" title="Previous">&#10094</a>-->
+       <a href="#" class="prev" title="Previous">&#10094</a>
     
          <div class="slide fade">
              <img src='https://images.unsplash.com/photo-1575114819496-2f0698d2d7e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1922&q=80' alt=''>
@@ -75,45 +77,43 @@
            </div>
     
          
-       <!--  <a href="#" class="next" title="Next">&#10095</a>-->
+       <a href="#" class="next" title="Next">&#10095</a>
          <div class="dots-container">
            <span class="dot"></span>
            <span class="dot"></span>
            <span class="dot"></span>
            <span class="dot"></span>
          </div> 
-       </div>
-    <div class="main-container" >
+       </div>-->
+    
     <div class="page-slider" >
         <div class="sliders" >
-            <i class="fas fa-star"></i><span>6.7</span>
-            <h1>Roald Dahl's The Wit...</h1>
-            <p>In late 1967, a young orphaned boy goes to live 
-                with his loving grandma in the rural Alabama 
-                town of Demopolis. As the boy and his grandmother 
-                encount...</p>
+            <i class="fas fa-star"></i><span></span>
+        
+            <h1></h1>
+            <p></p>
 
                 <div class="button-div" >
                     <a href="#" class="sliders-a">See Details</a>
                     <button class="sliders-btn">Add to list</button>
                 </div>
-        </div>
-        
+       
+            </div>
     </div>
-</div>
+
 
 </section>
 <!--END OF SLIDER SECTION-->
 
 <!--TRENDING SECTION-->
-<section id="trending-section"  class="main-container">
+<section id="trending-section" >
     
     <div class="trending" >
         
-            <li><i class="fab fa-hotjar"></i>Trending</li>
-            <li> <i class="fas fa-star"></i>Top Rated</li>
-            <li><i class="fas fa-chart-line"></i>Popular</li>
-            <li><i class="fas fa-plus"></i>Upcoming</li>
+            <li><i class="fab fa-hotjar"></i><a href="#">Trending</a></li>
+            <li> <i class="fas fa-star"></i><a href="#">Top Rated</a></li>
+            <li><i class="fas fa-chart-line"></i><a href="#">Popular</a></li>
+            <li><i class="fas fa-plus"></i><a href="#">Upcoming</a></li>
     
         
         
@@ -124,7 +124,9 @@
         <div class="movie-box" >
             <div class="movie-container">
                 
-                <!--movies box starts here-->
+                <!--INSERT MOVIES HERE WITH API-->
+
+                <!--movies box starts here
                 <div class="movies">
                     <div class="img-thumb">
                         <a href="#" alt="movies to watch"><img src="./img/1.jpg" alt="movies to watch" /> </a>
@@ -138,245 +140,17 @@
                             </div>
                             <p><i class="fas fa-star"></i>7.2</p>
                         </div>
-                </div>
+                </div>-->
                 <!--movies box ends here-->
                 
-                 <!--movies box starts here-->
-                 <div class="movies">
-                    <div class="img-thumb">
-                        <a href="#" alt="movies to watch"><img src="./img/1.jpg" alt="movies to watch" /> </a>
-                        <a class="movie-title" href="/movie/738646">Operation Christmas Drop</a>
-                     </div>
-                        <div class="details">
-                            <p>2020</p>
-                             <div class="reactions" >
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <p><i class="fas fa-star"></i>7.2</p>
-                        </div>
-                </div>
-                <!--movies box ends here-->
-                 <!--movies box starts here-->
-                 <div class="movies">
-                    <div class="img-thumb">
-                        <a href="#" alt="movies to watch"><img src="./img/1.jpg" alt="movies to watch" /> </a>
-                        <a class="movie-title" href="/movie/738646">Operation Christmas Drop</a>
-                     </div>
-                        <div class="details">
-                            <p>2020</p>
-                             <div class="reactions" >
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <p><i class="fas fa-star"></i>7.2</p>
-                        </div>
-                </div>
-                <!--movies box ends here-->
-                 <!--movies box starts here-->
-                 <div class="movies">
-                    <div class="img-thumb">
-                        <a href="#" alt="movies to watch"><img src="./img/1.jpg" alt="movies to watch" /> </a>
-                        <a class="movie-title" href="/movie/738646">Operation Christmas Drop</a>
-                     </div>
-                        <div class="details">
-                            <p>2020</p>
-                             <div class="reactions" >
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <p><i class="fas fa-star"></i>7.2</p>
-                        </div>
-                </div>
-                <!--movies box ends here-->
-
-                 <!--movies box starts here-->
-                 <div class="movies">
-                    <div class="img-thumb">
-                        <a href="#" alt="movies to watch"><img src="./img/1.jpg" alt="movies to watch" /> </a>
-                        <a class="movie-title" href="/movie/738646">Operation Christmas Drop</a>
-                     </div>
-                        <div class="details">
-                            <p>2020</p>
-                             <div class="reactions" >
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <p><i class="fas fa-star"></i>7.2</p>
-                        </div>
-                </div>
-                <!--movies box ends here-->
-                <!--movies box starts here-->
-                <div class="movies">
-                    <div class="img-thumb">
-                        <a href="#" alt="movies to watch"><img src="./img/1.jpg" alt="movies to watch" /> </a>
-                        <a class="movie-title" href="/movie/738646">Operation Christmas Drop</a>
-                     </div>
-                        <div class="details">
-                            <p>2020</p>
-                             <div class="reactions" >
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <p><i class="fas fa-star"></i>7.2</p>
-                        </div>
-                </div>
-                <!--movies box ends here-->
                 
-                 <!--movies box starts here-->
-                 <div class="movies">
-                    <div class="img-thumb">
-                        <a href="#" alt="movies to watch"><img src="./img/1.jpg" alt="movies to watch" /> </a>
-                        <a class="movie-title" href="/movie/738646">Operation Christmas Drop</a>
-                     </div>
-                        <div class="details">
-                            <p>2020</p>
-                             <div class="reactions" >
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <p><i class="fas fa-star"></i>7.2</p>
-                        </div>
-                </div>
-                <!--movies box ends here-->
-                 <!--movies box starts here-->
-                 <div class="movies">
-                    <div class="img-thumb">
-                        <a href="#" alt="movies to watch"><img src="./img/1.jpg" alt="movies to watch" /> </a>
-                        <a class="movie-title" href="/movie/738646">Operation Christmas Drop</a>
-                     </div>
-                        <div class="details">
-                            <p>2020</p>
-                             <div class="reactions" >
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <p><i class="fas fa-star"></i>7.2</p>
-                        </div>
-                </div>
-                <!--movies box ends here-->
-                 <!--movies box starts here-->
-                 <div class="movies">
-                    <div class="img-thumb">
-                        <a href="#" alt="movies to watch"><img src="./img/1.jpg" alt="movies to watch" /> </a>
-                        <a class="movie-title" href="/movie/738646">Operation Christmas Drop</a>
-                     </div>
-                        <div class="details">
-                            <p>2020</p>
-                             <div class="reactions" >
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <p><i class="fas fa-star"></i>7.2</p>
-                        </div>
-                </div>
-                <!--movies box ends here-->
-
-                 <!--movies box starts here-->
-                 <div class="movies">
-                    <div class="img-thumb">
-                        <a href="#" alt="movies to watch"><img src="./img/1.jpg" alt="movies to watch" /> </a>
-                        <a class="movie-title" href="/movie/738646">Operation Christmas Drop</a>
-                     </div>
-                        <div class="details">
-                            <p>2020</p>
-                             <div class="reactions" >
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <p><i class="fas fa-star"></i>7.2</p>
-                        </div>
-                </div>
-                <!--movies box ends here-->
-                <!--movies box starts here-->
-                <div class="movies">
-                    <div class="img-thumb">
-                        <a href="#" alt="movies to watch"><img src="./img/1.jpg" alt="movies to watch" /> </a>
-                        <a class="movie-title" href="/movie/738646">Operation Christmas Drop</a>
-                     </div>
-                        <div class="details">
-                            <p>2020</p>
-                             <div class="reactions" >
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <p><i class="fas fa-star"></i>7.2</p>
-                        </div>
-                </div>
-                <!--movies box ends here-->
-                
-                 <!--movies box starts here-->
-                 <div class="movies">
-                    <div class="img-thumb">
-                        <a href="#" alt="movies to watch"><img src="./img/1.jpg" alt="movies to watch" /> </a>
-                        <a class="movie-title" href="/movie/738646">Operation Christmas Drop</a>
-                     </div>
-                        <div class="details">
-                            <p>2020</p>
-                             <div class="reactions" >
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <p><i class="fas fa-star"></i>7.2</p>
-                        </div>
-                </div>
-                <!--movies box ends here-->
-                 <!--movies box starts here-->
-                 <div class="movies">
-                    <div class="img-thumb">
-                        <a href="#" alt="movies to watch"><img src="./img/1.jpg" alt="movies to watch" /> </a>
-                        <a class="movie-title" href="/movie/738646">Operation Christmas Drop</a>
-                     </div>
-                        <div class="details">
-                            <p>2020</p>
-                             <div class="reactions" >
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <p><i class="fas fa-star"></i>7.2</p>
-                        </div>
-                </div>
-                <!--movies box ends here-->
-                 <!--movies box starts here-->
-                 <div class="movies">
-                    <div class="img-thumb">
-                        <a href="#" alt="movies to watch"><img src="./img/1.jpg" alt="movies to watch" /> </a>
-                        <a class="movie-title" href="/movie/738646">Operation Christmas Drop</a>
-                     </div>
-                        <div class="details">
-                            <p>2020</p>
-                             <div class="reactions" >
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <p><i class="fas fa-star"></i>7.2</p>
-                        </div>
-                </div>
-                <!--movies box ends here-->
-
-                 <!--movies box starts here-->
-                 <div class="movies">
-                    <div class="img-thumb">
-                        <a href="#" alt="movies to watch"><img src="./img/1.jpg" alt="movies to watch" /> </a>
-                        <a class="movie-title" href="/movie/738646">Operation Christmas Drop</a>
-                     </div>
-                        <div class="details">
-                            <p>2020</p>
-                             <div class="reactions" >
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <p><i class="fas fa-star"></i>7.2</p>
-                        </div>
-                </div>
-                <!--movies box ends here-->
                
 
 
             </div>
              <a href="#" class="more-btn sliders-a" >See More</a>
         </div>
-    </div>
+    </di>
 </section>
 
 <!--END OF TRENDING SECTION-->
@@ -385,7 +159,7 @@
 
 
 
-<section id="on-air" class="main-container">
+<section id="on-air" >
     <div class="trending" >
         
         <li><i class="fas fa-desktop"></i>On Air</li>
@@ -397,12 +171,11 @@
     
     </div>
     <div class="on-air" ></div>
-
+</section>
 <!--END OF ON AIR ESCTION-->
 </diV>
-
-
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="index.js" ></script>
-    <script src="slider.js" ></script>
+   <!-- <script src="slider.js" ></script>-->
 </body>
 </html>

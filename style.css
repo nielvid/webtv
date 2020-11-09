@@ -1,6 +1,19 @@
 /*********************/
 /*GENERAL RULES*/
 /*********************/
+#text{
+    color: #fdfdfd;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 35%, rgba(255, 255, 255, 0.2) 100%) 50% / cover no-repeat, url(https://image.tmdb.org/t/p//w1280/hbrXbVoE0NuA1ORoSGGYNASagrl.jpg);
+    background-size: cover;
+    
+
+position: absolute;
+        top: 110px;
+        height: 500px;
+        width: 100%;
+    
+}
+
 *{
     box-sizing: border-box;
 }
@@ -9,6 +22,7 @@ font-size: 1.4rem;
 font-family: 'Open Sans', sans-serif;
 color: #fdfdfd;
 background-color: #16151a;
+
 }
 body{
     margin: 0;
@@ -43,8 +57,8 @@ header{
     position: fixed;
     width: 72%;
     height: 100px;
-    z-index: 10;
-    background-color:  #16151a;
+    z-index: 12;
+   
     opacity: 0.9;
     font-family: 'Merriweather Sans', sans-serif;
 
@@ -76,6 +90,7 @@ header{
 }
 .list-container .list{
     padding: 0px 2rem;
+    font-size: 18px;
 }
 #collapse-menu{
     display: none;
@@ -152,17 +167,19 @@ header{
 #slider-section{
     
     width: 100%;
-    height: 100vh;
+    height: 659px;
     margin: 0;
     /*background: url('https://images.unsplash.com/photo-1588807308097-fb6e5047df8c?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ');*/
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 35%, rgba(255, 255, 255, 0.2) 100%) 50%;/* / cover no-repeat, url('https://image.tmdb.org/t/p//w1280/hbrXbVoE0NuA1ORoSGGYNASagrl.jpg');
+    /*background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 35%, rgba(255, 255, 255, 0.2) 100%) 50%;/* / cover no-repeat, url('https://image.tmdb.org/t/p//w1280/hbrXbVoE0NuA1ORoSGGYNASagrl.jpg');
     /*background-repeat: no-repeat;*/
 }
 .page-slider{
+   
     position: relative;
-    top: 80px;
-    left: 0;
+    top: 150px;
     width: 100%;
+
+    
 
 }
 .page-slider .fa-star{
@@ -178,21 +195,21 @@ header{
 .sliders{
     font-family: 'Merriweather Sans', sans-serif;
     position: absolute;
-    top: 90px;
+    top: 0px;
     left: auto;
     
-    width: 50%;
+    width: 60%;
     
     
 
 }
 .sliders h1{
-    font-size: 65px;
+    font-size: 55px;
     margin-top: 8px;
     margin-bottom: -8px;
 }
 .sliders p{
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.8em;
 }
 .button-div{
@@ -282,7 +299,7 @@ hr{
 /*********************/
 @media (max-width: 1024px){
     .header-bar{
-
+      
         /*display: flex;
         width: 100%;
         height: 100%;
@@ -303,8 +320,11 @@ hr{
 
     #collapse-menu{
              display: block;
-                position: absolute;
+               position: absolute;
                 top: 40px;
+                right: 0;
+               
+                
                 
              
         }
@@ -318,6 +338,7 @@ hr{
         list-style: none;
         padding-top: 35px;
         color: #000000;
+     
         
     }
     .mobile{
@@ -331,11 +352,20 @@ hr{
     }
 
 
+    .page-slider{
 
+        position: relative;
+        top: 30px;
+        
+        width: 100%;
+    
+        
+    
+    }
        .sliders{
         font-family: 'Merriweather Sans', sans-serif;
         position: absolute;
-        top: 90px;
+        top: 270px;
         left: auto;
        
         width: 100%;
@@ -348,8 +378,12 @@ hr{
         margin-bottom: -8px;
     }
     .sliders p{
+       
         font-size: 12px;
         line-height: 1.8em;
+        line-break: auto;
+        padding-right: 105px;
+        
     }
 
 
@@ -439,6 +473,62 @@ hr{
 
 
 
+.page-slider{
+
+    position: relative;
+    top: 80px;
+   
+    width: 100%;
+
+    
+
+}
+   .sliders{
+    font-family: 'Merriweather Sans', sans-serif;
+    position: absolute;
+    top: 120px;
+    left: auto;
+   
+    width: 100%;
+    
+
+}
+.sliders h1{
+    font-size: 17px;
+    margin-top: 8px;
+    margin-bottom: -8px;
+}
+.sliders p{
+   
+    font-size: 12px;
+    line-height: 1.8em;
+    line-break: auto;
+    padding-right: 40px;
+    
+}
+
+
+
+.button-div{
+    margin-top: 28px;
+    padding-top: 30px;
+}
+.sliders-a{
+    background: rgb(218, 40, 40);
+    border: 1px solid rgb(218, 40, 40);
+    border-radius: 35px;
+    padding: 10px;
+    width: 85px;
+    font-size: 12px;
+}
+.sliders-btn{
+    background: #ffffff;
+   border: 1px solid #ffffff;
+   border-radius: 35px;
+   padding: 10px;
+   width: 85px;
+   font-size: 12px;
+}
 
 
 
@@ -479,6 +569,78 @@ hr{
         font-size: 10px;
         margin: 15px 0px;
     }
+
+
+
+
+.sliders{
+    font-family: 'Merriweather Sans', sans-serif;
+    position: absolute;
+    top: 150px;
+    left: auto;
+   
+    width: 90%;
+    
+
+}
+.sliders h1{
+    font-size: 17px;
+    margin-top: 8px;
+    margin-bottom: -8px;
+}
+.sliders p{
+   
+    font-size: 12px;
+    line-height: 1.8em;
+    line-break: auto;
+    padding-right: 55px;
+    
+}
+}
+
+
+@media (max-width: 421px){
+
+    .sliders p{
+       
+        font-size: 10px;
+        line-height: 1.8em;
+        line-break: auto;
+       
+        
+    }
+    .button-div{
+        margin-top: 8px;
+        padding-top: 30px;
+    }
+   
+}
+@media (max-width: 420px){
+.sliders-a{
+    background: rgb(218, 40, 40);
+    border: 1px solid rgb(218, 40, 40);
+    border-radius: 35px;
+    padding: 5px;
+    width: 75px;
+    font-size: 10px;
+}
+.sliders-btn{
+    background: #ffffff;
+   border: 1px solid #ffffff;
+   border-radius: 35px;
+   padding: 5px;
+   width: 75px;
+   font-size: 10px;
+}
+
+.sliders p{
+       
+    font-size: 10px;
+    line-height: 1.8em;
+    line-break: auto;
+ 
+    
+}
 }
 @media (max-width: 322px){
 
@@ -487,6 +649,39 @@ hr{
         display: block;
         font-size: 8px;
         margin: 15px 0px;
+    }
+    .page-slider{
+
+        position: relative;
+        top: 17px;
+        
+        width: 100%;
+    
+        
+    
+    }
+    .sliders{
+        font-family: 'Merriweather Sans', sans-serif;
+        position: absolute;
+        top: 100px;
+        left: auto;
+       
+        width: 90%;
+        
+    
+    }
+    .sliders h1{
+        font-size: 15x;
+        margin-top: 8px;
+        margin-bottom: -8px;
+    }
+    .sliders p{
+       
+        font-size: 10px;
+        line-height: 1.8em;
+        line-break: auto;
+        padding-right: 35px;
+        
     }
 }
 @media (max-width: 268px){
@@ -497,5 +692,12 @@ hr{
         font-size: 8px;
         margin: 15px 0px;
     }
+    .sliders{
+        font-family: 'Merriweather Sans', sans-serif;
+        position: absolute;
+        top: 100px;
+        left: auto;
+       
+        width: 90%;
 }
 
